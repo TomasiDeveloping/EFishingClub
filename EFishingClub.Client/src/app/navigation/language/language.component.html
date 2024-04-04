@@ -1,0 +1,12 @@
+<div class="language-container">
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>public</mat-icon>
+  </button>
+  <div>{{selectedLanguage.label}}</div>
+  <mat-menu #menu="matMenu" xPosition="after">
+    @for (language of supportedLanguages; track language) {
+      <button (click)="onLanguageChange(language)" mat-menu-item>{{language.name}}</button>
+    }
+  </mat-menu>
+</div>
+
