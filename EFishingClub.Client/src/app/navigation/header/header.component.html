@@ -1,0 +1,31 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="onToggleSidenav()" fxShow="true" fxHide.gt-sm>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="brand">{{'Navigation.Brand' | translate}}</span>
+    <div fxShow="true" fxHide.lt-md="true">
+      <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+      <a routerLink="#" mat-button>
+        <mat-icon>notifications</mat-icon>
+        Notifications
+      </a>
+      <a routerLink="#" mat-button>
+        <mat-icon>message</mat-icon>
+        Messages
+      </a>
+      <a routerLink="#" mat-button>
+        <mat-icon>account_box</mat-icon>
+        My Account
+      </a>
+
+    </div>
+    <span class="example-spacer"></span>
+    <div>
+      <app-language></app-language>
+    </div>
+    <div>
+      <app-dark-light-switch></app-dark-light-switch>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

@@ -1,0 +1,17 @@
+mat-toolbar{
+  border-radius: 3px;
+}
+
+.brand {
+  margin-right: 50px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+@media(max-width: 959px){
+  mat-toolbar{
+    border-radius: 0;
+  }
+}
