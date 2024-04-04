@@ -1,0 +1,145 @@
+@use "@angular/material" as mat;
+@use "sass:map";
+
+@include mat.core();
+
+$primary-palette: (
+  50: #fef7df,
+  100: #fdeaae,
+  200: #fcdc7a,
+  300: #fbd041,
+  400: #fac400,
+  500: #f9ba00,
+  600: #faac00,
+  700: #fb9800,
+  800: #fb8700,
+  900: #fc6500,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: rgba(black, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: rgba(black, 0.87),
+    A200: rgba(black, 0.87),
+    A400: white,
+    A700: white,
+  ),
+);
+
+$accent-palette: (
+  50: #ededed,
+  100: #d1d1d1,
+  200: #b7b1b2,
+  300: #9f9093,
+  400: #8e767b,
+  500: #7c5e64,
+  600: #6f555a,
+  700: #5e494e,
+  800: #4e3d42,
+  900: #3d3035,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: rgba(black, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: rgba(black, 0.87),
+    A200: rgba(black, 0.87),
+    A400: rgba(black, 0.87),
+    A700: white,
+  ),
+);
+
+$warn-palette: (
+  50: #fde6ec,
+  100: #fac0d1,
+  200: #f898b2,
+  300: #f57094,
+  400: #f1557d,
+  500: #ee4267,
+  600: #dd3d64,
+  700: #c6385f,
+  800: #b1335b,
+  900: #8c2b52,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  ),
+);
+
+$app-primary: mat.define-palette($primary-palette, 400, 100, 600);
+$app-accent: mat.define-palette($accent-palette, 500, 800, 900);
+$app-warn: mat.define-palette($warn-palette, 500);
+
+$light-app-theme: mat.define-light-theme(
+    (
+      color: (
+        primary: $app-primary,
+        accent: $app-accent,
+        warn: $app-warn,
+      ),
+    )
+);
+
+$dark-app-theme: mat.define-dark-theme(
+    (
+      color: (
+        primary: $app-primary,
+        accent: $app-accent,
+        warn: $app-warn,
+      ),
+    )
+);
+
+// In this source, the dark and light colors are the same, but this mixin
+// allows generation of different colors for dark and light themes.
+@mixin theme-colors($theme) {
+  $color-config: mat.get-color-config($theme);
+  $primary-palette: map.get($color-config, "primary");
+  $accent-palette: map.get($color-config, "accent");
+  $warn-palette: map.get($color-config, "warn");
+  $is-dark-theme: map.get($color-config, "is-dark");
+
+  --app-primary-color: #{mat.get-color-from-palette($primary-palette, 400)};
+  --app-accent-color: #{mat.get-color-from-palette($accent-palette, 500)};
+  --app-warn-color: #{mat.get-color-from-palette($warn-palette, 500)};
+}
+
+:root {
+  @include mat.all-component-themes($light-app-theme);
+  @include theme-colors($light-app-theme);
+}
+
+.dark-theme {
+  @include mat.all-component-colors($dark-app-theme);
+  @include theme-colors($dark-app-theme);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
