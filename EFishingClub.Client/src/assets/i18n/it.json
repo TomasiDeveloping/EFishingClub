@@ -1,6 +1,37 @@
 {
   "Navigation": {
-    "Brand": "Club di pesca elettronica",
-    "Home": "Pagina iniziale"
+    "Brand": "Club di pesca E",
+    "Home": "Pagina iniziale",
+    "Dashboard": "Dashboard",
+    "FishingRegulations": "Regolamenti di pesca",
+    "ClosedSeason": "Limiti minimi di dimensione / Stagioni chiuse",
+    "License": "Licenza di pesca",
+    "FishingDay": "Giorno di pesca",
+    "CatchStatistics": "Statistiche di cattura",
+    "Account": "Account"
+  },
+  "Home": {
+    "Title": "Pagina iniziale"
+  },
+  "Dashboard": {
+    "Title": "Dashboard"
+  },
+  "FishingRegulations": {
+    "Title": "Normative sulla pesca"
+  },
+  "ClosedSeason": {
+    "Title": "Stagione chiusa e dimensioni minime"
+  },
+  "License": {
+    "Title": "Licenza di pesca"
+  },
+  "FishingDay": {
+    "Title": "Giorno di pesca"
+  },
+  "CatchStatistics": {
+    "Title": "Statistiche di cattura"
+  },
+  "Account": {
+    "Title": "Account"
   }
 }

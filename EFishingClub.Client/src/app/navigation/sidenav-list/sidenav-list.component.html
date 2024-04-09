@@ -1,23 +1,44 @@
 
 <mat-nav-list>
-  <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
+  <a mat-list-item routerLink="/home" routerLinkActive="active" (click)="onSidenavClose()">
     <div class="icon-text">
-      <mat-icon>home</mat-icon>
       <span class="nav-caption">{{'Navigation.Home' | translate}}</span>
     </div>
   </a>
-  <a mat-list-item routerLink="/owner" (click)="onSidenavClose()">
+  <a mat-list-item routerLink="/dashboard" routerLinkActive="active" (click)="onSidenavClose()">
     <div class="icon-text">
-      <mat-icon>assignment_ind</mat-icon>
-      <span class="nav-caption">Owner Actions</span>
+      <span class="nav-caption">{{'Navigation.Dashboard' | translate}}</span>
     </div>
   </a>
-  <a mat-list-item routerLink="#" (click)="onSidenavClose()">
+  <a mat-list-item routerLink="/fishing-regulations" routerLinkActive="active" (click)="onSidenavClose()">
     <div class="icon-text">
-      <mat-icon>account_balance</mat-icon>
-      <span class="nav-caption">Account Actions</span>
+      <span class="nav-caption">{{'Navigation.FishingRegulations' | translate}}</span>
     </div>
-
+  </a>
+  <a mat-list-item routerLink="/closed-season" routerLinkActive="active" (click)="onSidenavClose()">
+    <div class="icon-text">
+      <span class="nav-caption">{{'Navigation.ClosedSeason' | translate}}</span>
+    </div>
+  </a>
+  <a mat-list-item routerLink="/license" routerLinkActive="active" (click)="onSidenavClose()">
+    <div class="icon-text">
+      <span class="nav-caption">{{'Navigation.License' | translate}}</span>
+    </div>
+  </a>
+  <a mat-list-item routerLink="/fishing-day" routerLinkActive="active" (click)="onSidenavClose()">
+    <div class="icon-text">
+      <span class="nav-caption">{{'Navigation.FishingDay' | translate}}</span>
+    </div>
+  </a>
+  <a mat-list-item routerLink="/catch-statistics" routerLinkActive="active" (click)="onSidenavClose()">
+    <div class="icon-text">
+      <span class="nav-caption">{{'Navigation.CatchStatistics' | translate}}</span>
+    </div>
+  </a>
+  <a mat-list-item routerLink="/account" routerLinkActive="active" (click)="onSidenavClose()">
+    <div class="icon-text side-nav-account">
+      <span class="nav-caption">{{'Navigation.Account' | translate}}</span>
+    </div>
   </a>
 </mat-nav-list>
 

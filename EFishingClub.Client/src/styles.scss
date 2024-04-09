@@ -141,5 +141,19 @@ body {
 
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.active {
+  //background-color: #9a9999 !important;
+  font-weight: bold !important;
+  color: #0093ff !important;
+}
+
+.active span {
+  color: #0093ff !important;
+}
+
+h1 {
+  text-align: center;
 }

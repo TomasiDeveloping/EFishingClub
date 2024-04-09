@@ -14,6 +14,14 @@ import { LanguageComponent } from './navigation/language/language.component';
 import {HttpClientModule} from "@angular/common/http";
 import {MatMenu, MatMenuItem, MatMenuTrigger} from "@angular/material/menu";
 import {ThirdPartyModule} from "./modules/third-party.module";
+import { HomeComponent } from './pages/home/home.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { FishingRegulationsComponent } from './pages/fishing-regulations/fishing-regulations.component';
+import { ClosedSeasonComponent } from './pages/closed-season/closed-season.component';
+import { LicenseComponent } from './pages/license/license.component';
+import { FishingDayComponent } from './pages/fishing-day/fishing-day.component';
+import { CatchStatisticsComponent } from './pages/catch-statistics/catch-statistics.component';
+import { AccountComponent } from './pages/account/account.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +31,14 @@ import {ThirdPartyModule} from "./modules/third-party.module";
     SidenavListComponent,
     DarkLightSwitchComponent,
     LanguageComponent,
+    HomeComponent,
+    DashboardComponent,
+    FishingRegulationsComponent,
+    ClosedSeasonComponent,
+    LicenseComponent,
+    FishingDayComponent,
+    CatchStatisticsComponent,
+    AccountComponent,
   ],
   imports: [
     BrowserModule,

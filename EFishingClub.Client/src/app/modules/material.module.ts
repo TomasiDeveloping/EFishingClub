@@ -11,6 +11,7 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import {MatSelectCountryModule} from "@angular-material-extensions/select-country";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatSelectModule} from "@angular/material/select";
+import {MatInputModule} from "@angular/material/input";
 
 
 
@@ -28,7 +29,8 @@ import {MatSelectModule} from "@angular/material/select";
     MatSlideToggleModule,
     MatSelectCountryModule.forRoot('de'),
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    MatInputModule
   ],
   exports: [
     MatToolbarModule,
@@ -41,7 +43,8 @@ import {MatSelectModule} from "@angular/material/select";
     MatSlideToggleModule,
     MatSelectCountryModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    MatInputModule
   ]
 })
 export class MaterialModule { }

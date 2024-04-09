@@ -1,6 +1,37 @@
 {
   "Navigation": {
     "Brand": "E-Fischerei-Club",
-    "Home": "Startseite"
+    "Home": "Startseite",
+    "Dashboard": "Dashboard",
+    "FishingRegulations": "Fischereivorschriften",
+    "ClosedSeason": "Mindestgrößen / Schonzeiten",
+    "License": "Angellizenz",
+    "FishingDay": "Angeltag",
+    "CatchStatistics": "Fangstatistik",
+    "Account": "Konto"
+  },
+  "Home": {
+    "Title": "Startseite"
+  },
+  "Dashboard": {
+    "Title": "Dashboard"
+  },
+  "FishingRegulations": {
+    "Title": "Fischereivorschriften"
+  },
+  "ClosedSeason": {
+    "Title": "Schonzeiten und Mindestmasse"
+  },
+  "License": {
+    "Title": "Angellizenz"
+  },
+  "FishingDay": {
+    "Title": "Angeltag"
+  },
+  "CatchStatistics": {
+    "Title": "Fangstatistik"
+  },
+  "Account": {
+    "Title": "Konto"
   }
 }

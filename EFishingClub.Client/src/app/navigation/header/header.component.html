@@ -3,22 +3,37 @@
     <button mat-icon-button (click)="onToggleSidenav()" fxShow="true" fxHide.gt-sm>
       <mat-icon>menu</mat-icon>
     </button>
-    <span class="brand">{{'Navigation.Brand' | translate}}</span>
-    <div fxShow="true" fxHide.lt-md="true">
+    <span routerLink="/home" class="brand">{{'Navigation.Brand' | translate}}</span>
+    <div fxShow="true" fxHide.lt-md="true" class="nav-items">
       <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-      <a routerLink="#" mat-button>
-        <mat-icon>notifications</mat-icon>
-        Notifications
+      <a routerLink="/dashboard" routerLinkActive="active" mat-button>
+        <mat-icon>dashboard</mat-icon>
+        {{'Navigation.Dashboard' | translate}}
       </a>
-      <a routerLink="#" mat-button>
-        <mat-icon>message</mat-icon>
-        Messages
+      <a routerLink="/fishing-regulations" routerLinkActive="active" mat-button>
+        <mat-icon>gavel</mat-icon>
+        {{'Navigation.FishingRegulations' | translate}}
       </a>
-      <a routerLink="#" mat-button>
+      <a routerLink="/closed-season" routerLinkActive="active" mat-button>
+        <mat-icon>straighten</mat-icon>
+        {{'Navigation.ClosedSeason' | translate}}
+      </a>
+      <a routerLink="/license" routerLinkActive="active" mat-button>
+        <mat-icon>assignment_ind</mat-icon>
+        {{'Navigation.License' | translate}}
+      </a>
+      <a routerLink="/fishing-day" routerLinkActive="active" mat-button>
+        <mat-icon>phishing</mat-icon>
+        {{'Navigation.FishingDay' | translate}}
+      </a>
+      <a routerLink="/catch-statistics" routerLinkActive="active" mat-button>
+        <mat-icon>bar_chart</mat-icon>
+        {{'Navigation.CatchStatistics' | translate}}
+      </a>
+      <a routerLink="/account" routerLinkActive="active" mat-button class="account">
         <mat-icon>account_box</mat-icon>
-        My Account
+        {{'Navigation.Account' | translate}}
       </a>
-
     </div>
     <span class="example-spacer"></span>
     <div>

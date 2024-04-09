@@ -4,12 +4,21 @@ mat-toolbar{
 
 .brand {
   margin-right: 50px;
+  cursor: pointer;
 }
 
 .example-spacer {
   flex: 1 1 auto;
 }
 
+.nav-items {
+  width: 100%;
+}
+
+.account {
+  float: right;
+  margin-right: 24px;
+}
 @media(max-width: 959px){
   mat-toolbar{
     border-radius: 0;

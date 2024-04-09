@@ -1,6 +1,37 @@
 {
   "Navigation": {
     "Brand": "E-Fishing Club",
-    "Home": "Start page"
+    "Home": "Start page",
+    "Dashboard": "Dashboard",
+    "FishingRegulations": "Fishing regulations",
+    "ClosedSeason": "Minimum size limits / closed seasons",
+    "License": "Fishing license",
+    "FishingDay": "Fishing day",
+    "CatchStatistics": "Catch statistics",
+    "Account": "Account"
+  },
+  "Home": {
+    "Title": "Home"
+  },
+  "Dashboard": {
+    "Title": "Dashboard"
+  },
+  "FishingRegulations": {
+    "Title": "Fishing Regulations"
+  },
+  "ClosedSeason": {
+    "Title": "Closed Season and Minimum Sizes"
+  },
+  "License": {
+    "Title": "Fishing License"
+  },
+  "FishingDay": {
+    "Title": "Fishing Day"
+  },
+  "CatchStatistics": {
+    "Title": "Catch Statistics"
+  },
+  "Account": {
+    "Title": "Account"
   }
 }
